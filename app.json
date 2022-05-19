@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "FirebaseChat",
+    "slug": "FirebaseChat",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "FirebaseChat"
+}
