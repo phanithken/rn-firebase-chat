@@ -17,6 +17,7 @@
 #import <ReactCommon/RCTTurboModuleManager.h>
 
 #import <react/config/ReactNativeConfig.h>
+#import <Firebase.h>
 
 @interface AppDelegate () <RCTCxxBridgeDelegate, RCTTurboModuleManagerDelegate> {
   RCTTurboModuleManager *_turboModuleManager;
@@ -44,6 +45,9 @@
 #endif
 
   UIView *rootView = [self.reactDelegate createRootViewWithBridge:bridge moduleName:@"main" initialProperties:nil];
+  
+  // Firebase init
+  [FIRApp configure];
 
   rootView.backgroundColor = [UIColor whiteColor];
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
